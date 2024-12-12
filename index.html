@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Buy phone</title>
+  </head>
+  <body>
+    <div class="main">
+    <div class="container">
+      <div class="phonemain">
+        <img
+          class="w-25 "
+          src="https://imageio.forbes.com/specials-images/imageserve/641397e79f04500b85460b8f/Apple--iPhone-15--iPhone-15-Pro-Max--iPhone-15-Pro--iPhone-15-Pro-design--iPhone-15/0x0.jpg?format=jpg&crop=923,692,x364,y0,safe&width=960"
+          alt=""
+        />
+        <b>Apple iPhone 15 Pro Max</b>
+        <div class="countrow">
+            <button class="minus bg-danger" id="minus" onclick="handaler(false)">-</button>
+            <input type="text" value="1" id="count" />
+            <button class="plus bg-success" id="plus" onclick="handaler(true)">+</button>
+          </div>
+      </div>
+
+      <div class="row">
+        <p id="total">$1200</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="phonemain">
+        <img
+          class="w-25 "
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz3SSceI26nSt3hZQAySSJNZOuFnkvMNeKIw&s"
+          alt=""
+        />
+        <b>Apple iPhone Case</b>
+        <div class="countrow">
+          <button class="minus bg-danger" id="minus2" onclick="handaler2(false)">-</button>
+          <input type="text" value="1" id="count2" />
+          <button class="plus bg-success" id="plus2" onclick="handaler2(true)">+</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <b id="total2"> $105</b>
+      </div>
+    </div>
+
+</div>
+<div class="mt-2 allcalculation">
+  <b id="alltotal">All Total:$ 1305</b>
+  <button class="btn btn-primary" onclick='alert("Successfully Buy!")'>Buy</button>
+</div>
+
+<script src="script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
